@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2family=Poppin&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', monospace;
+
+}
+
+body.img {
+    background-image: url("https://images.pexels.com/photos/3801097/pexels-photo-3801097.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+ul {
+    list-style: none;
+    background: #2b2d42;
+}
+
+ul li{
+    display: inline-block;
+    position: relative;
+}
+
+ul li a{
+    display: block;
+    padding: 20px 25px;
+    color: #edf2f4;
+    text-align: center;
+    font-size: 20px;
+}
+
+ul li ul.dropdown li{
+    display: block;
+}
+
+ul li ul.dropdown{
+    width: 100%;
+    background-color: #8d99ae;
+    position: absolute;
+    z-index: 999;
+    display: none;
+
+}
+
+ul li a:hover {
+    background-color: #ef233c;
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.btn-1 {
+    width: 300px;
+    height:100px;
+    border: none;
+    color: #1d3557;
+    background-color: #e63946;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 #f1faee;
+    transition: ease-out 0.3s;
+    font-size: 2rem;
+    outline: none;
+}
+
+.btn-1:hover {
+    box-shadow: inset 300px 0 0 0 #457b9d;
+    color: #f1faee;
+}
+
+.btn-2 {
+    width: 300px;
+    height:100px;
+    border: none;
+    color: #1d3557;
+    background-color: #e63946;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 #f1faee;
+    transition: ease-out 0.3s;
+    font-size: 2rem;
+    outline: none;
+    border: 3px solid #a8dadc;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-2:hover {
+    color: #457b9d
+
+}
+
+.btn-2:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #a8dadc;
+}
+
+.btn-2:hover::before{
+    transition: 0;
+    right: 0;
+    left: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
+table {
+    width: 80%;
+    margin: 50px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #2b2d42;
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+}
+
+thead {
+    background-color: #8d99ae;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #edf2f4;
+}
+
+#gif {
+    width: 600px;
+    height: 400px;
+    
+}
+
+
